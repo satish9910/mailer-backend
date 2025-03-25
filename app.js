@@ -9,7 +9,10 @@ const port = 8000;
 
 app.use(cors({
     origin: ["http://localhost:5173", "https://mailer-frontend-pearl.vercel.app"],
-    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
+
 }));
 
 app.use(express.json());
