@@ -9,6 +9,7 @@ const port = 8000;
 
 app.use(cors({
     origin: 'http://localhost:5173',  // Removed trailing slash
+    origin:"https://mailer-frontend-pearl.vercel.app/",
     credentials: true,
 }));
 
